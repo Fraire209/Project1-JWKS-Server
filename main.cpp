@@ -49,7 +49,7 @@ int main() {
     // Simulate incoming requests
     while (true) {
         string request;
-        getline(std::cin, request);
+        getline(cin, request);
 
         // Check if the request is for JWKS endpoint
         if (request.find("GET /jwks") != string::npos) {
